@@ -33,6 +33,7 @@ public class TakingTurnsQueue
     /// </summary>
     public Person GetNextPerson()
     {
+        
         if (_people.IsEmpty())
         {
             throw new InvalidOperationException("No one in the queue.");
@@ -43,6 +44,10 @@ public class TakingTurnsQueue
             if (person.Turns > 1)
             {
                 person.Turns -= 1;
+                _people.Enqueue(person);
+            }
+            if (person.Turns <= 0)
+            {
                 _people.Enqueue(person);
             }
 
