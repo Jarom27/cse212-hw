@@ -25,6 +25,11 @@
     private static int CountDuplicates(int[] data)
     {
         // Add code here.
+        Dictionary<int, int> countDuplicates
+        foreach (var number in data)
+        {
+
+        }
         return 0;
     }
 }
