@@ -8,6 +8,5 @@ public class Program
         // with any code or ideas you have that do not directly apply to
         // one of your projects.
 
-        Console.WriteLine("Hello Sandbox World!");
     }
 }
